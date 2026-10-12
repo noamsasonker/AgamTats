@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>תיק עבודות וגלריה | AgamTats סטודיו קעקועים צפת</title>
+  
+  <meta name="description" content="תיק העבודות המלא של אגם טאטס בצפת. קעקועי פיין ליין (Fine Line), בלאקוורק, דרקונים יפניים, סייבר וקליגרפיה עם סינון לפי אזור בגוף וסגנון.">
+  <meta name="theme-color" content="#09090b">
+  
+  <link rel="icon" type="image/jpeg" href="assets/images/brand-logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#09090b',
+            surface: '#111115',
+            surfaceCard: '#15151a',
+            parchment: '#f4ece7'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- UserWay Accessibility Widget -->
+  <script src="https://cdn.userway.org/widget.js" data-account="k5Tj3n2E5K" async></script>
+</head>
+<body class="editorial-grid-bg min-h-screen flex flex-col">
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#galleryGrid" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:right-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#5e1422] focus:text-white focus:rounded-lg">
+    דלג לגלריית העבודות
+  </a>
+
+  <!-- Top Navigation Bar -->
+  <header class="editorial-nav fixed top-0 inset-x-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 h-16 md:h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Name -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 group">
+        <div class="logo-medallion w-9 h-9 sm:w-11 sm:h-11">
+          <img src="assets/images/brand-logo.jpg" alt="AgamTats Studio Crest" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-brand text-base sm:text-xl font-bold tracking-widest text-[#f4ece7] group-hover:text-white transition">AGAMTATS</span>
+          <span class="text-[10px] sm:text-[11px] text-[#a69e9b] font-medium tracking-normal -mt-0.5 sm:-mt-1">סטודיו קעקועים • צפת</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">דף הבית</a>
+        <a href="gallery.html" class="nav-link active">גלריה</a>
+        <a href="about.html" class="nav-link">אודות</a>
+        <a href="index.html#contact" class="nav-link">יצירת קשר</a>
+      </nav>
+
+      <!-- Quick Action & Mobile Toggle -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html#contact" 
+           class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#15151a] hover:bg-[#1e1e24] border border-[rgba(244,236,231,0.14)] text-xs font-semibold text-[#f4ece7] hover:text-white transition shadow-sm">
+          <span>קביעת תור וייעוץ</span>
+        </a>
+
+        <a href="https://wa.me/972559531511?text=%D7%94%D7%99%D7%99%20%D7%90%D7%92%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%AA%D7%95%D7%A8%20%D7%95%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%9C%D7%A7%D7%A2%D7%A7%D7%95%D7%A2" 
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-xs font-bold text-white shadow-md shadow-green-500/25 transition min-h-[38px] sm:min-h-0"
+           title="וואטסאפ מהיר לסטודיו">
+          <svg class="w-3.5 h-3.5 fill-current text-white shrink-0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span class="text-xs font-bold">וואטסאפ</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button (44px comfortable touch target) -->
+        <button id="mobileMenuToggle" type="button" aria-label="תפריט ניווט"
+                class="md:hidden w-11 h-11 rounded-xl bg-[#15151a] border border-[rgba(244,236,231,0.12)] text-[#a69e9b] hover:text-white transition flex items-center justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="flex items-center justify-between pb-5 border-b border-[rgba(244,236,231,0.1)]">
+      <div class="flex items-center gap-3">
+        <div class="logo-medallion w-9 h-9">
+          <img src="assets/images/brand-logo.jpg" alt="AgamTats" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-brand font-bold text-base tracking-wider text-[#f4ece7]">AGAMTATS</span>
+          <span class="text-[10px] text-[#a69e9b]">סטודיו קעקועים • צפת</span>
+        </div>
+      </div>
+      <button id="closeMobileMenu" type="button" aria-label="סגירת תפריט" class="w-11 h-11 rounded-xl bg-[#15151a] border border-[rgba(244,236,231,0.12)] text-[#a69e9b] hover:text-white flex items-center justify-center">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col py-6 space-y-1">
+      <a href="index.html" class="drawer-nav-link text-[#a69e9b] hover:text-white">
+        <span>דף הבית</span>
+        <svg class="w-4 h-4 text-[#665f5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </a>
+      <a href="gallery.html" class="drawer-nav-link text-[#f4ece7]">
+        <span>גלריית עבודות</span>
+        <svg class="w-4 h-4 text-[#665f5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </a>
+      <a href="about.html" class="drawer-nav-link text-[#a69e9b] hover:text-white">
+        <span>אודות הסטודיו</span>
+        <svg class="w-4 h-4 text-[#665f5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </a>
+      <a href="index.html#contact" class="drawer-nav-link text-[#a69e9b] hover:text-white">
+        <span>קביעת תור וייעוץ</span>
+        <svg class="w-4 h-4 text-[#665f5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-[rgba(244,236,231,0.1)] space-y-3">
+      <a href="https://wa.me/972559531511" target="_blank" rel="noopener noreferrer" 
+         class="btn-whatsapp w-full justify-center text-sm font-bold shadow-lg">
+        <span>פנייה ישירה בוואטסאפ</span>
+      </a>
+      <div class="text-center text-xs text-[#a69e9b] pt-1">
+        מענה מהיר בימים א'–ה' 10:00–19:00
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Header -->
+  <main class="flex-1 pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 max-w-6xl mx-auto w-full">
+    
+    <div class="max-w-2xl mb-8 sm:mb-12">
+      <div class="status-pill mb-3 sm:mb-4">
+        <span>תיק עבודות מקצועי</span>
+        <span class="text-[#665f5c]">•</span>
+        <span>צילומים אמיתיים מלקוחות הסטודיו בצפת</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-bold text-[#f4ece7] tracking-tight">גלריית עבודות</h1>
+      <p class="text-xs sm:text-base text-[#a69e9b] mt-2.5 sm:mt-3 leading-relaxed">
+        עיון בקעקועים שבוצעו בסטודיו בצפת. השתמשו בחיפוש ובמסננים כדי למצוא קעקועים לפי אזור בגוף או לפי סגנון אומנותי.
+      </p>
+    </div>
+
+    <!-- Filter & Search Controls Bar -->
+    <div class="bg-[#111115]/85 border border-[rgba(244,236,231,0.14)] rounded-2xl p-4 sm:p-6 mb-8 sm:mb-10 backdrop-blur-md space-y-5 sm:space-y-6 shadow-xl">
+      
+      <!-- Keyword Search Field -->
+      <div class="relative max-w-lg">
+        <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-[#a69e9b]">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <input type="text" id="gallerySearch" placeholder="חיפוש קעקוע לפי מילת מפתח (פרפר, דרקון, זרוע, קו דק...)" 
+               class="form-input pr-10 text-sm">
+      </div>
+
+      <!-- Filter Row 1: Body Placement (אזור בגוף) -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-wider text-[#d5cbc4] mb-2 sm:mb-2.5 flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-[#a69e9b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span>סינון לפי אזור בגוף:</span>
+        </div>
+        <div class="filter-chips-row">
+          <button type="button" class="placement-chip filter-chip active" data-placement="all">כל האזורים</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="arm">זרוע ואמה</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="hand">כף יד ואצבעות</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="wrist">שורש כף היד</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="ribs">אגן ומותן</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="leg">רגל וקרסול</button>
+          <button type="button" class="placement-chip filter-chip" data-placement="back">גב</button>
+        </div>
+      </div>
+
+      <!-- Filter Row 2: Tattoo Style (סגנון קעקוע) -->
+      <div>
+        <div class="text-xs font-semibold uppercase tracking-wider text-[#d5cbc4] mb-2 sm:mb-2.5 flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-[#a69e9b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+          <span>סינון לפי סגנון:</span>
+        </div>
+        <div class="filter-chips-row">
+          <button type="button" class="style-chip filter-chip active" data-style="all">כל הסגנונות</button>
+          <button type="button" class="style-chip filter-chip" data-style="fineline">קו דק (Fine Line)</button>
+          <button type="button" class="style-chip filter-chip" data-style="blackwork">בלאקוורק (Blackwork)</button>
+          <button type="button" class="style-chip filter-chip" data-style="japanese">ניאו-יפני (Japanese)</button>
+          <button type="button" class="style-chip filter-chip" data-style="contemporary">סייבר וכרום (Cyber)</button>
+          <button type="button" class="style-chip filter-chip" data-style="lettering">כיתוב ואורנמנט</button>
+        </div>
+      </div>
+
+      <!-- Real-time Status Counter & Reset -->
+      <div class="pt-3 border-t border-[rgba(244,236,231,0.08)] flex items-center justify-between text-xs text-[#a69e9b]">
+        <span id="galleryCount" class="font-medium">טוען עבודות...</span>
+        <button type="button" id="resetFiltersBtn" class="text-xs text-[#f4ece7] hover:underline transition">
+          איפוס כל המסננים
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Gallery Grid (Loaded dynamically from tattoos.json by gallery.js) -->
+    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <!-- Empty State (Shown when search/filter has 0 matches) -->
+    <div id="galleryEmptyState" class="hidden text-center py-24 bg-[#111115]/60 rounded-3xl border border-[rgba(244,236,231,0.12)] p-8 max-w-lg mx-auto">
+      <div class="w-14 h-14 rounded-2xl bg-[rgba(244,236,231,0.05)] text-[#f4ece7] flex items-center justify-center mx-auto mb-4 border border-[rgba(244,236,231,0.14)]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h3 class="text-lg font-bold text-[#f4ece7] mb-1">לא נמצאו עבודות תואמות</h3>
+      <p class="text-xs sm:text-sm text-[#a69e9b] mb-6">
+        נסו לשנות את מילת החיפוש או לבחור שילוב מסננים אחר.
+      </p>
+      <button type="button" onclick="document.getElementById('resetFiltersBtn').click()" class="btn-secondary text-xs">
+        איפוס כל המסננים והצגת כל הגלריה
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="galleryLightbox" class="lightbox-backdrop">
+    <div class="lightbox-modal">
+      
+      <!-- Close Button (Comfortable 44px touch target) -->
+      <button id="lbCloseBtn" type="button" aria-label="סגירה" 
+              class="absolute top-3 left-3 sm:top-4 sm:left-4 z-30 w-11 h-11 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center border border-[rgba(244,236,231,0.2)] transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Media Visual (Main Image) -->
+      <div class="relative bg-black flex items-center justify-center overflow-hidden aspect-[3/4] sm:aspect-auto max-h-[50vh] sm:max-h-none">
+        <img id="lbImage" src="" alt="תצוגת קעקוע מוגדלת" class="w-full h-full object-contain">
+        
+        <!-- Navigation Arrows (In RTL: Left is Next, Right is Previous) -->
+        <button id="lbPrevBtn" type="button" aria-label="קעקוע קודם"
+                class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center border border-white/10 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+
+        <button id="lbNextBtn" type="button" aria-label="קעקוע הבא"
+                class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center border border-white/10 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+      </div>
+
+      <!-- Metadata & Details Column -->
+      <div class="p-5 sm:p-8 flex flex-col justify-between bg-[#111115] border-t sm:border-t-0 sm:border-r border-[rgba(244,236,231,0.14)]">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <span id="lbStyle" class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#15151a] text-[#f4ece7] border border-[rgba(244,236,231,0.18)]">סגנון</span>
+            <span id="lbPlacement" class="text-xs text-[#a69e9b] font-medium">מיקום</span>
+          </div>
+
+          <h2 id="lbTitle" class="text-xl sm:text-2xl font-bold text-[#f4ece7] mb-2 sm:mb-3">שם הקעקוע</h2>
+          <p id="lbDescription" class="text-xs sm:text-sm text-[#a69e9b] leading-relaxed font-light">תיאור הקעקוע והעבודה</p>
+          
+          <div class="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-[rgba(244,236,231,0.08)] space-y-2 text-xs text-[#665f5c]">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>סטודיו בוטיק פרטי בצפת</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>100% התאמה אנטומית אישית</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 sm:mt-8 pt-4 border-t border-[rgba(244,236,231,0.08)] flex flex-col gap-2.5">
+          <a id="lbWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" 
+             class="btn-whatsapp w-full justify-center">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>תיאום קעקוע בסגנון זה בוואטסאפ</span>
+          </a>
+          <a href="index.html#contact" class="btn-secondary w-full justify-center text-xs">
+            <span>מילוי טופס פנייה מפורט</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Complete Professional Footer -->
+  <footer class="border-t border-[rgba(244,236,231,0.1)] py-12 sm:py-16 px-4 sm:px-8 bg-[#09090b] text-[#a69e9b] mt-auto">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Main Footer Columns Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 pb-10 sm:pb-14 border-b border-[rgba(244,236,231,0.08)]">
+        
+        <!-- Column 1: Brand & Logo (5 Cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <div class="logo-medallion w-10 h-10">
+              <img src="assets/images/brand-logo.jpg" alt="AgamTats Studio Logo" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span class="font-brand font-bold text-xl text-[#f4ece7] tracking-wider block">AGAMTATS</span>
+              <span class="text-xs text-[#a69e9b]">סטודיו קעקועים בוטיק • צפת</span>
+            </div>
+          </div>
+          
+          <p class="text-xs sm:text-sm text-[#a69e9b] leading-relaxed max-w-sm font-light">
+            סטודיו בוטיק פרטי לאמנות הקעקוע בצפת. התמחות ייחודית בקו עדין (Fine Line), הצללות רכות, בלאקוורק וקומפוזיציות אנטומיות בהתאמה אישית מלאה.
+          </p>
+
+          <div class="pt-2 flex items-center gap-3">
+            <a href="https://instagram.com/agmtats_" target="_blank" rel="noopener noreferrer" 
+               class="w-10 h-10 rounded-full badge-instagram flex items-center justify-center transition hover:scale-105"
+               aria-label="Instagram">
+              <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            
+            <a href="https://wa.me/972559531511" target="_blank" rel="noopener noreferrer" 
+               class="w-10 h-10 rounded-full badge-whatsapp flex items-center justify-center transition hover:scale-105"
+               aria-label="WhatsApp">
+              <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links (2.5 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-[#f4ece7] font-semibold block">ניווט מהיר</span>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="index.html" class="py-1.5 inline-block hover:text-white transition">דף הבית</a></li>
+            <li><a href="gallery.html" class="py-1.5 inline-block hover:text-white transition">גלריית עבודות</a></li>
+            <li><a href="about.html" class="py-1.5 inline-block hover:text-white transition">אודות הסטודיו</a></li>
+            <li><a href="index.html#contact" class="py-1.5 inline-block hover:text-white transition">קביעת תור וייעוץ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal & Accessibility (2.5 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-[#f4ece7] font-semibold block">תקנון ומשפטי</span>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="terms.html" class="py-1.5 inline-block hover:text-white transition">תקנון ותנאי שימוש</a></li>
+            <li><a href="privacy.html" class="py-1.5 inline-block hover:text-white transition">מדיניות פרטיות ועוגיות</a></li>
+            <li><a href="accessibility.html" class="py-1.5 inline-block hover:text-white transition">הצהרת נגישות (תקן AA)</a></li>
+            <li><button type="button" onclick="window.reopenCookieBanner && window.reopenCookieBanner()" class="py-1.5 inline-block hover:text-white transition text-right">ניהול העדפות עוגיות</button></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Location & Policy (2 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-[#f4ece7] font-semibold block">סטודיו צפת</span>
+          <ul class="space-y-2 text-xs">
+            <li class="text-[#a69e9b]">צפת, ישראל</li>
+            <li class="text-[#a69e9b]">
+              <a href="tel:0559531511" class="hover:text-white transition flex items-center gap-1.5">
+                <span>טל':</span>
+                <span class="font-mono-numbers">055-9531511</span>
+              </a>
+            </li>
+            <li class="text-[#a69e9b]">בתיאום מראש בלבד</li>
+            <li class="text-[#a69e9b]">גיל 16+ בליווי ת.ז</li>
+            <li class="text-[#a69e9b]">100% סטרילי ואישי</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#665f5c]">
+        <div>
+          © <span class="current-year">2026</span> AgamTats Studio. כל הזכויות על העיצובים, הסקיצות והתמונות שמורות.
+        </div>
+        <div class="flex items-center gap-4 text-[#a69e9b]">
+          <span>צפת, ישראל</span>
+          <span>•</span>
+          <span>Fine Line & Contemporary Tattoo Artistry</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="scripts/common.js"></script>
+  <script src="scripts/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<USER_REQUEST>
+# Complete Mobile-First Responsive Redesign
+
+I really like how the website currently looks on desktop. **Do not redesign or change the desktop version.** The desktop design is the reference for the entire website's visual identity.
+
+However, the mobile version currently feels extremely cramped, crowded, and poorly organized. I want you to redesign the mobile experience from the ground up while preserving the same premium aesthetic, branding, colors, typography, and overall design language as the desktop version.
+
+The goal is to make the mobile website feel like a professionally designed mobile experience, not a compressed desktop website.
+
+## 1. Preserve the Desktop Design
+
+- Keep the current desktop layout, styling, spacing, colors, typography, animations, and component appearance as close to the existing version as possible.
+- Do not change the desktop design just to make the mobile layout easier to implement.
+- Treat the existing desktop version as the design reference.
+- Make mobile-specific changes using responsive CSS, media queries, flexible layouts, and component-level adjustments.
+- Avoid global changes that unintentionally affect the desktop experience.
+
+## 2. Completely Redesign the Mobile Layout
+
+Do not simply scale down the desktop website.
+
+Create a dedicated mobile layout that feels intentional, elegant, spacious, and easy to navigate.
+
+- Eliminate crowded sections, overlapping elements, cramped text, and unnecessarily dense layouts.
+- Give each section enough breathing room.
+- Use appropriate horizontal padding so content never touches the screen edges.
+- Adjust vertical spacing between headings, paragraphs, buttons, images, and sections.
+- Ensure text is readable without zooming.
+- Prevent content from overflowing horizontally.
+- Make the layout feel natural when scrolling on a phone.
+
+Prioritize visual clarity and simplicity over fitting as much content as possible onto one screen.
+
+## 3. Mobile Header and Navigation
+
+Redesign the header specifica
+<truncated 7071 bytes>
+ng changes. Identify what causes the mobile layout to feel cramped, crowded, or poorly organized, and fix the underlying issues rather than applying random CSS patches.
+
+**Mobile requirements:**
+- Create a clean, professional, premium-looking experience specifically for mobile screens.
+- Ensure every section has proper spacing, margins, padding, and readable typography.
+- Reorganize layouts when necessary instead of simply shrinking desktop elements.
+- Make the header, navigation, hero section, buttons, gallery, cards, contact section, and footer work naturally on small screens.
+- Prevent horizontal scrolling, overlapping elements, clipped content, and unnecessarily narrow text.
+- Make buttons and links comfortable to tap.
+- Use responsive images and appropriately sized content.
+- Keep the website's existing branding, colors, fonts, content, and overall visual identity consistent.
+
+**Desktop requirements:**
+- Preserve the current desktop design, layout, proportions, and visual appearance.
+- Do not unnecessarily redesign or remove desktop elements.
+- Scope mobile-specific changes to appropriate responsive breakpoints whenever possible.
+
+**Implementation:**
+- Inspect and reuse the existing code structure and components.
+- Fix the actual causes of layout problems instead of adding excessive overrides or duplicate CSS.
+- Test the finished website at widths of 320px, 375px, 390px, 430px, tablet sizes, and standard desktop resolutions.
+- Check every page and section, not just the homepage.
+- Verify that navigation, links, buttons, images, and interactive elements still work.
+
+Do not stop after making a few small adjustments. Complete a thorough responsive redesign, review the result at mobile sizes, and refine anything that still looks cramped or unprofessional. The final result should feel intentionally designed for mobile, not like a desktop website squeezed into a smaller screen.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-12T11:58:40+03:00.
+</ADDITIONAL_METADATA>
